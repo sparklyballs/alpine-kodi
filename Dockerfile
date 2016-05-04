@@ -63,7 +63,7 @@ make -C tools/depends/target/libdcadec PREFIX=/usr && \
 
 # apply patches
 git apply /patches/headless.patch && \
-git apply /patches/fix-rsxs.patch && \
+#git apply /patches/fix-rsxs.patch && \
 git apply /patches/add-missing-includes.patch && \
 git apply /patches/fix-fileemu.patch && \
 git apply /patches/fix-musl-x86.patch && \
