@@ -1,4 +1,4 @@
-FROM sparklyballs/bases-vanilla
+FROM sparklyballs/base-vanilla-alpine
 
 # change to tag of build you want
 ARG KODI_CHECKOUT="16.1-Jarvis"
