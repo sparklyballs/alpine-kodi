@@ -28,6 +28,7 @@ RUN \
 	dbus-dev \
 	eudev-dev \
 	faac-dev \
+	ffmpeg \
 	ffmpeg-dev \
 	findutils \
 	flac-dev \
