@@ -70,6 +70,8 @@ RUN \
 	libxt-dev \
 	lzo-dev \
 	m4 \
+	mariadb \
+	mariadb-dev \
 	mesa-demos \
 	mesa-dev \
 	nasm \
@@ -97,8 +99,6 @@ RUN \
 	yasm-dev \
 	zip && \
 
- apk add --no-cache --repository http://dl-cdn.alpinelinux.org/alpine/v3.3/main \
-	mariadb-dev && \
 
 # fetch kodi source
  curl -o /tmp/kodi.tar.gz -L https://github.com/xbmc/xbmc/archive/$KODI_VER-$KODI_NAME.tar.gz && \
@@ -187,6 +187,7 @@ RUN \
 	libxml2 \
 	libxslt \
 	lzo \
+	mariadb-libs \
 	py-bluez \
 	python \
 	taglib \
@@ -195,8 +196,6 @@ RUN \
 	xrandr \
 	yajl && \
 
- apk add --no-cache --repository http://dl-cdn.alpinelinux.org/alpine/v3.3/main \
-	mariadb-libs && \
 
 # clean up
  rm -rf /var/cache/apk/* /tmp/*
@@ -207,4 +206,5 @@ COPY root/ /
 # ports and volumes
 VOLUME /config/.kodi
 EXPOSE 8080 9777/udp
+
 
