@@ -28,8 +28,6 @@ RUN \
 	dbus-dev \
 	eudev-dev \
 	faac-dev \
-	ffmpeg \
-	ffmpeg-dev \
 	findutils \
 	flac-dev \
 	freetype-dev \
@@ -161,8 +159,7 @@ RUN \
 		--localstatedir=/var \
 		--mandir=/usr/share/man \
 		--prefix=/usr \
-		--sysconfdir=/etc \
-		--with-ffmpeg=shared && \
+		--sysconfdir=/etc && \
 
 # compile kodi
  make && \
@@ -173,7 +170,6 @@ RUN \
 
 # install runtime dependencies, clean cache and source files
  apk add --no-cache \
-	ffmpeg-libs \
 	freetype \
 	fribidi \
 	glew \
