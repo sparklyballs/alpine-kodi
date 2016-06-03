@@ -70,8 +70,6 @@ RUN \
 	libxt-dev \
 	lzo-dev \
 	m4 \
-	mariadb-client-libs \
-	mariadb-dev \
 	mesa-demos \
 	mesa-dev \
 	nasm \
@@ -98,6 +96,9 @@ RUN \
 	yajl-dev \
 	yasm-dev \
 	zip && \
+
+ apk add --no-cache --repository http://dl-cdn.alpinelinux.org/alpine/v3.3/main \
+	mariadb-dev && \
 
 # fetch kodi source
  curl -o /tmp/kodi.tar.gz -L https://github.com/xbmc/xbmc/archive/$KODI_VER-$KODI_NAME.tar.gz && \
