@@ -187,7 +187,6 @@ RUN \
 	libxml2 \
 	libxslt \
 	lzo \
-	mariadb-libs \
 	py-bluez \
 	python \
 	taglib \
@@ -195,6 +194,9 @@ RUN \
 	tinyxml \
 	xrandr \
 	yajl && \
+
+ apk add --no-cache --repository http://dl-cdn.alpinelinux.org/alpine/v3.3/main \
+	mariadb-libs && \
 
 # clean up
  rm -rf /var/cache/apk/* /tmp/*
