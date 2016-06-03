@@ -70,8 +70,8 @@ RUN \
 	libxt-dev \
 	lzo-dev \
 	m4 \
+	mariadb-client-libs \
 	mariadb-dev \
-	mariadb-libs \
 	mesa-demos \
 	mesa-dev \
 	nasm \
