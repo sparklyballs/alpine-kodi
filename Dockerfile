@@ -170,6 +170,7 @@ RUN \
 
 # install runtime dependencies, clean cache and source files
  apk add --no-cache \
+	ffmpeg-libs \
 	freetype \
 	fribidi \
 	glew \
@@ -184,6 +185,7 @@ RUN \
 	libxml2 \
 	libxslt \
 	lzo \
+	mariadb-client-libs \
 	mariadb-libs \
 	py-bluez \
 	python \
