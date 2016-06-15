@@ -91,9 +91,11 @@ RUN \
 	sqlite-dev \
 	swig \
 	taglib-dev \
+	tar \
 	tiff-dev \
 	tinyxml-dev \
 	udisks2-dev \
+	wget \
 	x264-dev \
 	x265-dev \
 	xdpyinfo \
@@ -195,6 +197,7 @@ RUN \
 	taglib \
 	tiff \
 	tinyxml \
+	wget \
 	xrandr \
 	yajl && \
 
